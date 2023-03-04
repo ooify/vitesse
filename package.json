@@ -4,13 +4,15 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite --port 3333 --open",
-    "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "test": "vitest",
     "up": "taze major -I"
   },
   "dependencies": {
+    "@antfu/ni": "^0.20.0",
     "@vueuse/core": "^9.11.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
